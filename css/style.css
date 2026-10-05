@@ -200,19 +200,16 @@ body {
 }
 
 .header-top {
+    width: 100%;
+    padding: 12px 0;
     background-color: #010101;
 }
 
-.header-top, .header-bottom {
+.header-top__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 24px;
-    padding: 16px 0;
-}
-
-.header-top {
-    padding: 8px 0;
 }
 
 .header-top__contacts {
@@ -245,6 +242,11 @@ body {
 }
 
 .header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 0;
     background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -301,6 +303,7 @@ body {
     font-size: 30px;
     font-weight: 300;
     line-height: 150%;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -308,6 +311,7 @@ body {
     font-size: 56px;
     font-weight: 600;
     line-height: 150%;
+    text-align: center;
     text-transform: uppercase;
     color: var(--accent-color);
 }
@@ -464,11 +468,13 @@ body {
 .team__item-name {
     font-size: 16px;
     font-weight: 700;
+    text-align: center;
 }
 
 .team__item-span {
     font-size: 14px;
     font-weight: 300;
+    text-align: center;
 }
 
 /* Reviews */

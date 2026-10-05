@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
@@ -14,18 +15,20 @@
     <div class="first-screen">
         <header class="header">
             <div class="header-top">
-                <div class="header-top container">
-                    <ul class="header-top__contacts">
-                        <li class="header-top__contact">
-                            <img src="./img/Header/phone.svg" alt="Телефон">
-                            <span>+7 (922) 022-94-82</span>
-                        </li>
-                        <li class="header-top__contact">
-                            <img src="./img/Header/mail.svg" alt="Email">
-                            <span>janis62@yahoo.com</span>
-                        </li>
-                    </ul>
-                    <button class="header-top__phone-btn">Заказать звонок</button>
+                <div class="container">
+                    <div class="header-top__inner">
+                        <ul class="header-top__contacts">
+                            <li class="header-top__contact">
+                                <img src="./img/Header/phone.svg" alt="Телефон">
+                                <span>+7 (922) 022-94-82</span>
+                            </li>
+                            <li class="header-top__contact">
+                                <img src="./img/Header/mail.svg" alt="Email">
+                                <span>janis62@yahoo.com</span>
+                            </li>
+                        </ul>
+                        <button class="header-top__phone-btn">Заказать звонок</button>
+                    </div>
                 </div>
             </div>
             <div class="header-bottom">
@@ -99,7 +102,6 @@
                         <h3 class="services__item-title">Корпоративные споры</h3>
                         <p class="services__item-text">Корпоративные споры – споры, связанные с созданием юрлица, управлением или участием в нем</p>
                     </li>
-
                     <li class="services__item">
                         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M29.1665 5.83329V23.3333H11.6665V5.83329H29.1665ZM29.1665 2.91663H11.6665C10.0623 2.91663 8.74984 4.22913 8.74984 5.83329V23.3333C8.74984 24.9375 10.0623 26.25 11.6665 26.25H29.1665C30.7707 26.25 32.0832 24.9375 32.0832 23.3333V5.83329C32.0832 4.22913 30.7707 2.91663 29.1665 2.91663ZM18.1853 20.4166L13.1248 15.3125L15.1665 13.2562L18.1853 16.2895L25.6665 8.74996L27.7082 10.8062L18.1853 20.4166ZM5.83317 8.74996H2.9165V29.1666C2.9165 30.7708 4.229 32.0833 5.83317 32.0833H26.2498V29.1666H5.83317V8.74996Z"/>
@@ -145,11 +147,11 @@
                         За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
                     </p>
                     <div class="about__btns">
-                        <button class="about__history-btn btn">История компании</button>
-                        <button class="about__docs-btn btn-secondary">Сертификаты</button>
+                        <button class="about__history-btn about__btn btn">История компании</button>
+                        <button class="about__docs-btn about__btn btn-secondary">Сертификаты</button>
                     </div>
                 </div>
-                <img src="./img/About/img.jpg" alt="Картинка">
+                <img class="about__img" src="./img/About/img.jpg" alt="Картинка">
             </div>
         </div>
     </section>
@@ -232,10 +234,10 @@
                     </li>
                 </ul>
                 <div class="reviews__btns">
-                    <button class="reviews__all-btn btn">
+                    <button class="reviews__all-btn reviews__btn btn">
                         <a href="/">Все отзывы</a>
                     </button>
-                    <button class="reviews__write-btn btn-secondary">Написать отзыв</button>
+                    <button class="reviews__write-btn reviews__btn btn-secondary">Написать отзыв</button>
                 </div>
             </div>
         </div>
@@ -379,6 +381,7 @@
         </div>
     </footer>
 
+    <!-- TODO -->
     <div class="consult-modal modal">
         <div class="modal__box">
             <button class="modal__cross consult-modal__cross">

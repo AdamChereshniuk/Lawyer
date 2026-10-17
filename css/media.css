@@ -15,13 +15,13 @@
         overflow-x: scroll;
     }
 
+    .header-bottom__list::-webkit-scrollbar {
+        display: none;
+    }
+
     .header-bottom__item > a {
         display: block;
         width: max-content;
-    }
-
-    .header-bottom__list::-webkit-scrollbar {
-        display: none;
     }
 
     /* Hero */
@@ -91,6 +91,10 @@
         overflow-x: scroll;
     }
 
+    .team__list::-webkit-scrollbar {
+        display: none;
+    }
+
     .team__item {
         display: block;
         width: max-content;
@@ -109,6 +113,10 @@
         width: 100%;
         max-width: calc((100vw) - 30px);
         overflow-x: scroll;
+    }
+
+    .reviews__list::-webkit-scrollbar {
+        display: none;
     }
 
     .reviews__item {
@@ -137,6 +145,10 @@
         width: 100%;
         max-width: calc((100vw) - 30px);
         overflow-x: scroll;
+    }
+
+    .blog__list::-webkit-scrollbar {
+        display: none;
     }
 
     .blog__item {
